@@ -58,6 +58,24 @@ This project focuses on detecting anomalies in a continuous data stream using di
 - `matplotlib`
 - `scikit-learn`
 
+### Creating a Virtual Environment
+
+To create a virtual environment, run the following command:
+
+```bash
+python -m venv venv
+```
+
+Activate the virtual environment:
+
+```bash
+venv\Scripts\activate # (On Windows)
+```
+
+```bash
+source venv/bin/activate #(On macOS and Linux:)
+```
+
 To install the necessary packages, use:
 
 ```bash
