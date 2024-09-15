@@ -65,7 +65,7 @@
     - Mean (µ) = 0
     - Standard Deviation (σ) = 1
     - Always centered at zero, intervals increase or decrease by 1.
-  - Formula: \( Z = \frac{x - µ}{σ} \)
+  - Formula: \( Z = {x - µ}/{σ})
     - Where:
       - \( x \) is the data point.
       - \( µ \) is the mean of the dataset.
