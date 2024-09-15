@@ -106,12 +106,12 @@
 
   - Anomalous points take fewer splits to isolate.
   - **Random Forest**:
-    - You have a dataset \( D \). Split the dataset into subsamples \( D(i) \) and build trees.
+    - You have a dataset D . Split the dataset into subsamples D(i) and build trees.
     - Subsample with replacement.
-    - Size of \( D(i) \) is the same as \( D \) (Size \( D = \) Size \( D(i) \)).
-    - Build trees resulting in models \( h(1) \) to \( h(n) \).
+    - Size of D(i) is the same as D i.e Size D = Size D(i).
+    - Build trees resulting in models h(1) to h(n).
     - Split until all points are isolated (clear overfitting).
-    - Split on \( K \) features where \( k < d \).
+    - Split on k features where k < d.
     - Average classifier result across all classifiers.
 
 - **Implementation**:
