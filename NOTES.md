@@ -113,7 +113,10 @@
     - Split until all points are isolated (clear overfitting).
     - Split on k features where k < d.
     - Average classifier result across all classifiers.
-
+![Isolation Forest](Images/1.png)
+![Isolation Forest](Images/2.png)
+![Isolation Forest](Images/3.png)
+   
 - **Implementation**:
   - Anomalous points are isolated faster.
   - Do not split all the way down; set a limit on tree depth.
