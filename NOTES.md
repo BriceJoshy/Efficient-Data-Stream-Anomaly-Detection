@@ -106,11 +106,16 @@
 
   - Anomalous points take fewer splits to isolate.
   - **Random Forest**:
-    - Split dataset into subsamples and build trees.
-    - Not split all the way down; anomalous points are isolated faster.
-    - Average path length across trees determines anomaly score.
+    - You have a dataset \( D \). Split the dataset into subsamples \( D(i) \) and build trees.
+    - Subsample with replacement.
+    - Size of \( D(i) \) is the same as \( D \) (Size \( D = \) Size \( D(i) \)).
+    - Build trees resulting in models \( h(1) \) to \( h(n) \).
+    - Split until all points are isolated (clear overfitting).
+    - Split on \( K \) features where \( k < d \).
+    - Average classifier result across all classifiers.
 
 - **Implementation**:
   - Anomalous points are isolated faster.
-  - Average path length is used as an anomaly score.
-  - Shorter path length indicates higher anomaly score.
+  - Do not split all the way down; set a limit on tree depth.
+  - Average path length across trees determines anomaly score.
+  - Shorter path length indicates a higher anomaly score.
